@@ -1,0 +1,22 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "Will quickly develop a professional ReadMe to use in future projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Banta",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BantaChristopher/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BantaChristopher/readme-generator/issues"
+  },
+  "homepage": "https://github.com/BantaChristopher/readme-generator#readme"
+}
