@@ -17,12 +17,12 @@ function makeReadMe() {
         },
         {
             type: 'input',
-            name: 'motivation',
+            name: 'reason',
             message: 'Why did you build this project?'
         },
         {
             type: 'input',
-            name: 'motivation',
+            name: 'solve',
             message: 'What problem does it solve?'
         },
         {
@@ -37,12 +37,12 @@ function makeReadMe() {
         },
         {
             type: 'input',
-            name: 'Screenshot',
+            name: 'screenshot',
             message: 'Can you provide the file location for a screenshot of your application? (Must be in your github repo)'
         },
         {
             type: 'input',
-            name: 'Credits',
+            name: 'credits',
             message: 'Did you collaborate or get help from an external source? If so list them here.'
         },
         {
