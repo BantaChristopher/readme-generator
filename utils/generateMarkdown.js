@@ -1,32 +1,23 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license === "") {
     return "";
   } else {
-    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+    return `[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license === "") {
     return "";
   } else {
     return `## License
 
-    This project is covered under the ${license} license.`
+${renderLicenseBadge(license)}
+
+This project is covered under the ${license} license.`
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -35,17 +26,24 @@ function generateMarkdown(data) {
 
   ## Description
 
+  Hi! Im ${data.author}! Let me tell you a little about my project.
+
+  ### What was my motivation for creating this project?
+  
   ${data.motivation}
-  ${data.reason}
+
+  ### What problem does this solve?
+
   ${data.solve}
 
   ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributions](#contributions)
   - [License](#license)
-  - [Contact](#contact)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation
 
@@ -55,13 +53,23 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ![Application in action](https://i.imgur.com/Wsnw8S3.png)
-
   ${renderLicenseSection(data.license)}
+
+  ![Application in action](${data.screenshot})
 
   ## Contributing
 
   ${data.credits}
+
+  ## Tests
+
+  ## Questions
+
+  For any questions or further inquiries feel free to contact me at either of the following:
+  
+  Github: [${data.github}](https://github.com/${data.github})
+
+  Email: <${data.email}>
 
   `;
 }

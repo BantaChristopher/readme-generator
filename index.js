@@ -17,11 +17,6 @@ function makeReadMe() {
         },
         {
             type: 'input',
-            name: 'reason',
-            message: 'Why did you build this project?'
-        },
-        {
-            type: 'input',
             name: 'solve',
             message: 'What problem does it solve?'
         },
@@ -38,7 +33,7 @@ function makeReadMe() {
         {
             type: 'input',
             name: 'screenshot',
-            message: 'Can you provide the file location for a screenshot of your application? (Must be in your github repo)'
+            message: 'Can you provide either the file location for a screenshot of your application or a link to the photo from a web address?'
         },
         {
             type: 'input',
@@ -46,7 +41,7 @@ function makeReadMe() {
             message: 'Did you collaborate or get help from an external source? If so list them here.'
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
             message: 'What license are you using for the project?'
         },

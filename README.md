@@ -1,13 +1,13 @@
 
-  # asd
+  # Read Deez Nuts
 
-  ![License](https://img.shields.io/badge/License-d-blue.svg)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
   asd
-  a
-  sd
+  asd
+  asd
 
   ## Table of Contents
 
@@ -15,24 +15,39 @@
   - [Usage](#usage)
   - [Contributions](#contributions)
   - [License](#license)
+  - [Author](#author)
   - [Contact](#contact)
 
   ## Installation
 
-  as
+  asd
 
   ## Usage
 
-  da
-  
-  ![Application in action](https://i.imgur.com/Wsnw8S3.png)
+  asd
+
+  ![Application in action](./utils/Screenshot%202023-07-19%20170350.png)
+
+  ## Contributions
+
+  asd
 
   ## License
 
-    This project is covered under the d license.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-  ## Contributing
+This project is covered under the MIT license.
 
-  as
+  ## Author
+
+  mama
+
+  ## Contact
+
+  For any questions or further inquiries feel free to contact me at any of the following:
+  
+  Github: joe
+
+  Email: joemama
 
   
