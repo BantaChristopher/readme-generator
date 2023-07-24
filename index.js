@@ -36,25 +36,30 @@ function makeReadMe() {
             message: 'Can you provide either the file location for a screenshot of your application or a link to the photo from a web address?'
         },
         {
+            type: 'list',
+            name: 'license',
+            message: 'What license are you using for the project?',
+            choices: ["The MIT License", "Apache 2.0", "ISC License", "Mozilla Public License 2.0", "BSD 3-Clause", "BSD 2-Clause", "Eclipse Public License 1.0", "The Unlicense",]
+        },
+        {
             type: 'input',
             name: 'credits',
             message: 'Did you collaborate or get help from an external source? If so list them here.'
         },
         {
-            type: 'list',
-            name: 'license',
-            message: 'What license are you using for the project?',
-            choices: ["MIT", "Apache-2.0", "ISC", "MPL-2.0", "BSD-3-Clause", "BSD-2-Clause", "EPL-1.0"]
-        },
-        {
             type: 'input',
-            name: 'github', 
-            message: 'What is your github username?'
+            name: 'tests',
+            message: 'How do you run tests with your application?'
         },
         {
             type: 'input',
             name: 'author',
             message: 'What is your name?'
+        },
+        {
+            type: 'input',
+            name: 'github', 
+            message: 'What is your github username?'
         },
         {
             type: 'input',

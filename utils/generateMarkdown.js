@@ -2,7 +2,24 @@ function renderLicenseBadge(license) {
   if(license === "") {
     return "";
   } else {
-    return `[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`
+    switch (license) {
+      case 'The MIT License':
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+      case 'The Unlicense':
+        return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+      case 'Mozilla Public License 2.0':
+        return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
+      case 'ISC License':
+        return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`;
+      case 'Eclipse Public License 1.0':
+        return `[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
+      case 'BSD 3-Clause':
+        return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
+      case 'BSD 2-Clause':
+        return `[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`
+      case 'Apache 2.0':
+        return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    }
   }
 }
 
@@ -53,15 +70,17 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ${renderLicenseSection(data.license)}
-
   ![Application in action](${data.screenshot})
+  
+  ${renderLicenseSection(data.license)}
 
   ## Contributing
 
   ${data.credits}
 
   ## Tests
+
+  ${data.tests}
 
   ## Questions
 
