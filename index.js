@@ -39,7 +39,7 @@ function makeReadMe() {
             type: 'list',
             name: 'license',
             message: 'What license are you using for the project?',
-            choices: ["The MIT License", "Apache 2.0", "ISC License", "Mozilla Public License 2.0", "BSD 3-Clause", "BSD 2-Clause", "Eclipse Public License 1.0", "The Unlicense",]
+            choices: ["MIT License", "Apache 2.0 License", "ISC License", "Mozilla Public License 2.0", "BSD 3-Clause License", "BSD 2-Clause License", "Eclipse Public License 1.0", "Unlicense",]
         },
         {
             type: 'input',
